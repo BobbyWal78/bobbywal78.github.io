@@ -1,0 +1,46 @@
+:root {
+    /* ========== RED THEME ========== */
+   --color-primary: #476c9b;
+   --color-primary-variant: #468C98;
+   --color-bg-1: #140021;
+   --color-bg-2: #320026;
+   --color-bg-3: #3e001b;
+   --color-bg-4: #984447;
+   --color-light: #e2a2a5;
+   --color-white: hsl(0, 0%, 90%); 
+   --container-width-lg: 88%;
+   --container-width-md: 92%;
+   --transition: all 400ms ease; 
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--color-bg-3) ;
+    color: var(--color-light);
+    line-height: 1.7;
+}
+
+.nav__container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+  nav {
+    height: 1rem;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+
+.nav__links {
+    display: flex;
+    gap: 2.5rem;
+}
+
