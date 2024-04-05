@@ -1,13 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 :root{
-    --white: #ddd;
-    --dark: #111;
-    --darkGrey: #474b4f;
-    --lightGrey: #6b6e70;
-    --lightGreen: #86c232;
-    --darkGreen: #61892f;
-    --transition: all 0.5s ease;
+ /* ========== RED THEME ========== */
+ --color-primary: #476c9b;
+ --color-primary-variant: #468C98;
+ --color-bg-1: #140021;
+ --color-bg-2: #320026;
+ --color-bg-3: #3e001b;
+ --color-bg-4: #984447;
+ --color-light: #e2a2a5;
+ --color-white: hsl(0, 0%, 90%); 
+ --container-width-lg: 88%;
+ --container-width-md: 92%;
+ --transition: all 400ms ease;
 }
 *{
     padding: 0;
