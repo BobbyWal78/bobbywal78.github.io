@@ -231,7 +231,7 @@ blockquote span{
 }
 .sec-one-left{
     height: 100vh;
-    background: url("images/corp2.jpg") center/cover no-repeat;
+    background: url("Docs/assets/corp2.jpg") center/cover no-repeat;
     box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.75);
@@ -271,12 +271,12 @@ blockquote span{
     grid-column-gap: 100px;
 }
 .work-img-1{
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url("images/main1.jpg") center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url("Docs/assets/main1.jpg") center/cover no-repeat;
     height: 100px;
     transition: var(--transition);
 }
 .work-img-2{
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url("images/main2.jpg") center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url("Docs/assets/main2.jpg") center/cover no-repeat;
     height: 200px;
     transition: var(--transition);
 }
