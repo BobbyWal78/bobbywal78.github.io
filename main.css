@@ -1,24 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');*/
 
 :root{
- /* ========== RED THEME ========== */
- --color-primary: #476c9b;
- --color-primary-variant: #468C98;
- --color-bg-1: #140021;
- --color-bg-2: #320026;
- --color-bg-3: #3e001b;
- --color-bg-4: #984447;
- --color-light: #e2a2a5;
- --color-white: hsl(0, 0%, 90%); 
- --container-width-lg: 88%;
- --container-width-md: 92%;
- --transition: all 400ms ease;
+    --white: #ddd;
+    --dark: #111;
+    --darkGrey: #474b4f;
+    --lightGrey: #6b6e70;
+    --lightGreen: #86c232;
+    --darkGreen: #61892f;
+    --color-bg-3: #3e001b;
+    --color-bg-4: #984447;
+    --color-light: #e2a2a5;
+    --transition: all 0.5s ease;
 }
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 body{
     line-height: 1.6;
@@ -69,7 +67,7 @@ h1, h2, h3, h4, h5, h6, p{
     color: #fff;
 }
 .active{
-    color: var(--lightGreen)!important;
+    color: var(--color-bg-4)!important;
 }
 
 /**************** end of Utility Classes *******************/
@@ -78,7 +76,7 @@ h1, h2, h3, h4, h5, h6, p{
 
 .header{
     min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/header.jpg") center/cover no-repeat;
+    background: linear-gradient(rgba(108, 6, 6, 0.6), rgba(0, 0, 0, 0.6)), url("images/header.jpg") center/cover no-repeat;
     color: #fff;
 }
 .top-nav a{
@@ -92,10 +90,10 @@ h1, h2, h3, h4, h5, h6, p{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-weight: 500;
-    font-size: 24px;
+    font-weight: 900;
+    font-size: 25px;
     padding: 15px 25px;
-    color: var(--white);
+    color: var(--color-bg-4);
 }
 .brand-name{
     letter-spacing: 5px;
@@ -108,7 +106,7 @@ h1, h2, h3, h4, h5, h6, p{
     cursor: pointer;
 }
 .navBtn:hover{
-    background: #fff;
+    background: hsl(0, 0%, 100%);
     color: #000;
     transition: var(--transition);
 }
@@ -124,19 +122,19 @@ h1, h2, h3, h4, h5, h6, p{
     display: none;
 }
 .top-nav ul li{
-    padding: 10px 0;
+    padding: 5px 0;
 }
 .top-nav ul a{
     position: relative;
-    font-weight: 500;
-    font-size: 18px;
+    font-weight: 250;
+    font-size: 30px;
     text-align: center;
     display: block;
 }
 .top-nav ul a::after{
     content: "";
     height: 2px;
-    background: var(--lightGreen);
+    background: var(--color-light);
     position: absolute;
     bottom: -5px;
     left: 50%;
@@ -151,22 +149,22 @@ h1, h2, h3, h4, h5, h6, p{
     margin-top: -160px;
 }
 .about-content img{
-    width: 140px;
-    height: 140px;
+    width: 190px;
+    height: 190px;
     border-radius: 50%;
 }
 .about-img{
     background: #fff;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     margin: 0 auto;
     border-radius: 50%;
 }
 .about-content h2{
-    font-size: 48px;
+    font-size: 80px;
     text-align: center;
     margin-bottom: 35px;
-    color: var(--lightGreen);
+    color: var(--color-light);
 }
 .about-content h3{
     color: #fff;
@@ -179,7 +177,7 @@ h1, h2, h3, h4, h5, h6, p{
 }
 blockquote{
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 400;
     opacity: 0.9;
     width: 60vw;
     margin: 45px auto 15px auto;
@@ -188,18 +186,18 @@ blockquote{
 blockquote span{
     font-size: 14px;
     text-transform: uppercase;
-    color: var(--darkGreen);
+    color: var(--color-light);
     font-weight: 300;
     letter-spacing: 5px;
     display: block;
 }
 .social-icons{
-    width: 350px;
+    width: 400px;
     margin: 40px auto 0 auto;
     padding-bottom: 30px;
 }
 .social-icons ul a{
-    color: #fff;
+    color: var(--color-bg-4);
     font-size: 30px;
     display: block;
     width: 50px;
@@ -216,8 +214,8 @@ blockquote span{
     justify-content: space-around;
 }
 .social-icons ul a:hover{
-    background: var(--lightGreen);
-    border-color: var(--lightGreen);
+    background: var(--color-light);
+    border-color: var(--color-light);
 }
 
 /********************* End of Header ***********************/
@@ -233,7 +231,7 @@ blockquote span{
 }
 .sec-one-left{
     height: 100vh;
-    background: url("images/project-main.jpg") center/cover no-repeat;
+    background: url("images/corp2.jpg") center/cover no-repeat;
     box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.75);
@@ -270,16 +268,16 @@ blockquote span{
 .work-imgs{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 20px;
+    grid-column-gap: 100px;
 }
 .work-img-1{
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url("images/porject-1.jpg") center/cover no-repeat;
-    height: 400px;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url("images/main1.jpg") center/cover no-repeat;
+    height: 100px;
     transition: var(--transition);
 }
 .work-img-2{
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url("images/porject-2.jpg") center/cover no-repeat;
-    height: 400px;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url("images/main2.jpg") center/cover no-repeat;
+    height: 200px;
     transition: var(--transition);
 }
 .work-imgs div:hover{
@@ -319,7 +317,7 @@ blockquote span{
     width: 100%;
     height: 100%;
     font-size: 50px;
-    background: rgba(134, 194, 50, 0.4);
+    background: rgba(233, 11, 11, 0.4);
     opacity: 0;
     transition: var(--transition);
 }
@@ -465,8 +463,8 @@ blockquote span{
 /******************* Footer Styling *****************/
 
 .footer{
-    background: var(--dark);
-    color: #fff;
+    background: var(--color-bg-3);
+    color: #720707;
     padding: 40px 0;
     text-align: center;
 }
@@ -474,7 +472,7 @@ blockquote span{
     margin: 40px 0;
 }
 .footer-container h2{
-    color: var(--lightGreen);
+    color: var(--color-light);
     font-size: 36px;
     font-weight: 500;
     letter-spacing: 7px;
@@ -483,7 +481,7 @@ blockquote span{
     opacity: 0.7;
 }
 .subs{
-    background: #000;
+    background: #000000;
     width: 350px;
     display: flex;
     justify-content: space-between;
@@ -509,13 +507,13 @@ blockquote span{
     font-size: 16px;
     padding: 15px 0;
     font-weight: bold;
-    background: var(--lightGreen);
+    background: var(--white);
     border: none;
     transition: var(--transition);
     cursor: pointer;
 }
 .subs button:hover{
-    color: #fff;
+    color: #1650ba;
 }
 .footer > p{
     text-align: center;
