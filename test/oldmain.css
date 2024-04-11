@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #191919;
+}
+
+/********************** Utility Classes *******************/
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 90vw;
+    margin: 0 auto;
+}
+.btn{
+    background: var(--darkGreen);
+    border: none;
+    display: block;
+    width: 150px;
+    text-align: center;
+    color: var(--darkGreen);
+    text-transform: uppercase;
+    background: transparent;
+    font-size: 15px;
+    padding: 12px;
+    border: 2px solid var(--darkGreen);
+    border-radius: 25px;
+    margin: 15px 0;
+    transition: var(--transition);
+}
+.btn:hover{
+    background: var(--darkGreen);
+    color: #fff;
+}
+.active{
+    color: var(--color-bg-4)!important;
+}
+
+/**************** end of Utility Classes *******************/
+
+/********************** Header styling *********************/
+
+.header{
+    min-height: 100vh;
+    background: linear-gradient(rgba(108, 6, 6, 0.6), rgba(0, 0, 0, 0.6)), url("Docs/assets/header.jpg") center/cover no-repeat;
+    color: #fff;
+}
+.top-nav a{
+    color: #fff;
+}
+.brand-and-navBtn{
+    background: #000;
+    position: relative;
+    z-index: 999;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 900;
+    font-size: 25px;
+    padding: 15px 25px;
+    color: var(--color-bg-4);
+}
+.brand-name{
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+
+.brand-logo { 
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 25px;
+    align-items: center;
+    width: 10.5rem;
+}
+.navBtn{
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--white);
+    cursor: pointer;
+}
+.navBtn:hover{
+    background: hsl(0, 0%, 100%);
+    color: #000;
+    transition: var(--transition);
+}
+.top-nav{
+    background: #000;
+    transform: translateY(-600px);
+    transition: var(--transition);
+}
+.showNav{
+    transform: translateY(0);
+}
+.search-icon{
+    display: none;
+}
+.top-nav ul li{
+    padding: 5px 0;
+}
+.top-nav ul a{
+    position: relative;
+    font-weight: 250;
+    font-size: 30px;
+    text-align: center;
+    display: block;
+}
+.top-nav ul a::after{
+    content: "";
+    height: 2px;
+    background: var(--color-light);
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    transition: var(--transition);
+}
+.top-nav ul a:hover::after{
+    width: 100px;
+}
+.about{
+    margin-top: -160px;
+}
+.about-content img{
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+}
+.about-img{
+    background: #fff;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+.about-content h2{
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 35px;
+    color: var(--color-light);
+}
+.about-content h3{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 100;
+    background: rgba(255, 255, 255, 0.1);
+    width: 400px;
+    margin: 35px auto;
+    text-align: center;
+}
+blockquote{
+    font-size: 20px;
+    font-weight: 400;
+    opacity: 0.9;
+    width: 60vw;
+    margin: 45px auto 15px auto;
+    text-align: center;
+}
+blockquote span{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--color-light);
+    font-weight: 300;
+    letter-spacing: 5px;
+    display: block;
+}
+.social-icons{
+    width: 400px;
+    margin: 40px auto 0 auto;
+    padding-bottom: 30px;
+}
+.social-icons ul a{
+    color: var(--color-bg-4);
+    font-size: 30px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: var(--transition);
+}
+.social-icons ul{
+    display: flex;
+    justify-content: space-around;
+}
+.social-icons ul a:hover{
+    background: var(--color-light);
+    border-color: var(--color-light);
+}
+
+/********************* End of Header ***********************/
+
+
+/****** image slider***/
+
+.gallery{
+    width: 900px;
+    display: flex;
+    overflow-x: scroll;
+}
+.gallery div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+.gallery div img{
+    width: 100%;
+    filter: grayscale(100%);
+    transition: transform 0.5s;
+
+}
+.gallery::-webkit-scrollbar{
+    display: none;
+}
+
+.gallery-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto ;
+}
+#backBtn,#nextBtn{
+    width: 50px;
+    cursor: pointer;
+    margin: 40px;
+
+}
+.gallery div img:hover {
+    filter: grayscale(0);
+    cursor: pointer;
+    transform: scale(1.1);
+
+}
+
+/****** end of image slider****/

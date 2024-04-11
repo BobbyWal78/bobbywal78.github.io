@@ -4,92 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CHARLES ATKINS PHOTOGRAPHY</title>
-    <!-- GOOGLE FONT (Monserrat) -->
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="main.css">
-    <!-- Fontawesome for Social icons -->
-<script src="https://kit.fontawesome.com/29a6805fd8.js" crossorigin="anonymous"></script>
-    <!-- java script-->
-    </head>
-    <body>
+    <!--Font Awesome CDN-->
+     <link rel="stylesheet" href="all.min.css" >
+     <script src="min.js"></script>
+     </head>
+    <body> 
+    <div class="container">
 
-        <!-- header -->
-    <header class = "header">
-        <div class = "nav-section">
-            <div class = "brand-and-navBtn">
-                <span class = "brand-name">
-                    <a href="index.html" class="brand-logo"><img src="Docs/assets/logo.png" alt="Brand Logo"></a>
-                </span>
-                <span class = "navBtn flex">
-                    <i class="fa-solid fa-bars"></i>
-                </span>
-            </div>
+        <div class="slide">
 
-            <!-- navigation menu -->
-            <nav class = "top-nav">
-                <ul>
-                    <li><a href = "index.html" class = "active">Home</a></li>
-                    <li><a href = "gallery.html">Gallery</a></li>
-                    <li><a href = "blog.html">Blog</a></li>
-                    <li><a href = "contact.html">Contact</a></li>
-                </ul>
-            </nav>
-          <span class = "search-icon">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </span>
-        </div>
-
-    </header>
-    <!-- end of header -->
-
-
-
-
-        <div class="gallery-wrap">
-            <img src="Docs/Assets/back.png" id="backBtn">
-            <div class="gallery">
-                <div>
-                     <span><img src = "Docs/assets/INSTA1.jpg"></span>
-                     <span><img src = "Docs/assets/INSTA2.jpg"></span>
-                     <span><img src = "Docs/assets/INSTA3.jpg"></span>
-                     <span><img src = "Docs/assets/INSTA4.jpg"></span>
-                 </div>
-                 <div>
-                    <span><img src = "Docs/assets/INSTA5.jpg"></span>
-                    <span><img src = "Docs/assets/INSTA6.jpg"></span>
-                    <span><img src = "Docs/assets/INSTA7.jpg"></span>
-                    <span><img src = "Docs/assets/INSTA8.jpg"></span>
+            
+            <div class="item" style="background-image: url(https://bobbywal78.github.io/tree/master/Docs/assets/family.jpg);">
+                <div class="content">
+                    <div class="name">Switzerland</div>
+                    <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                    <button>See More</button>
                 </div>
             </div>
-            <img src="Docs/Assets/next.png" id="nextBtn">
+            <div class="item" style="background-image: url(https://bobbywal78.github.io/tree/master/Docs/assets/family.jpg);">
+                <div class="content">
+                    <div class="name">Finland</div>
+                    <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(https://i.ibb.co/NSwVv8D/img3.jpg);">
+                <div class="content">
+                    <div class="name">Iceland</div>
+                    <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(https://i.ibb.co/Bq4Q0M8/img4.jpg);">
+                <div class="content">
+                    <div class="name">Australia</div>
+                    <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(https://i.ibb.co/jTQfmTq/img5.jpg);">
+                <div class="content">
+                    <div class="name">Netherland</div>
+                    <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(https://i.ibb.co/RNkk6L0/img6.jpg);">
+                <div class="content">
+                    <div class="name">Ireland</div>
+                    <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                    <button>See More</button>
+                </div>
+            </div>
+
         </div>
-            
-    <script>
 
-        let scrollContainer = document.querySelector(".gallery");
-        let backBtn =  document.getElementById("backBtn");
-        let nextBtn =  document.getElementById("nextBtn");
+        <div class="button">
+            <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
 
-        scrollContainer.addEventListener("wheel", (evt) => {
-            evt.preventDefault();
-            scrollContainer.scrollLeft += evt.deltaY;
-            scrollContainer.style.scrollBehavior = "auto";
-
-        });
-
-        nextBtn.addEventListener("click", ()=>{
-            scrollContainer.style.scrollBehavior = "smooth";
-            scrollContainer.scrollLeft +=900;
-        });
-
-        backBtn.addEventListener("click", ()=>{
-            scrollContainer.style.scrollBehavior = "smooth";
-            scrollContainer.scrollLeft +=900;
-        });
-
-    </script>
-        
-    
-
+    </div>
 </body>
 </html>
