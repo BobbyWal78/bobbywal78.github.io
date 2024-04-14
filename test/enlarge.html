@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Enlargement</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<section class="section-two">
+    <div class="container">
+        <h2>Services & Rates</h2>
+        <span>We offer a variety of photography services tailored to meet your needs, including: Portrait Photography and Event Coverage.</span>
+        <div class="insta-imgs">
+            <div>
+                <img src="Docs/assets/everything.jpg" class="enlargeable" onclick="enlargeImage(this)">
+                <div class="icon-overlay flex">
+                    <i class="fa-solid fa-camera"></i>
+                </div>
+            </div>
+            <div>
+                <img src="Docs/assets/group.jpg" class="enlargeable" onclick="enlargeImage(this)">
+                <div class="icon-overlay flex">
+                    <i class="fa-solid fa-camera"></i>
+                </div>
+            </div>
+            <div>
+                <img src="Docs/assets/personal.jpg" class="enlargeable" onclick="enlargeImage(this)">
+                <div class="icon-overlay flex">
+                    <i class="fa-solid fa-camera"></i>
+                </div>
+            </div>
+            <div>
+                <img src="Docs/assets/wedding.jpg" class="enlargeable" onclick="enlargeImage(this)">
+                <div class="icon-overlay flex">
+                    <i class="fa-solid fa-camera"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="overlay" onclick="hideImage()"></div>
+<div id="enlarged-image-container">
+    <img id="enlarged-image" src="" alt="Enlarged Image">
+    <span class="close-btn" onclick="hideImage()">&times;</span>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

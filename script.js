@@ -47,3 +47,52 @@ document.addEventListener('DOMContentLoaded', function () {
         contactForm.reset();
     });
 });
+
+// end of pop up message contact form
+
+
+
+// Function to handle image enlargement
+function enlargeImage(imageElement) {
+    const imageUrl = imageElement.src;
+
+    // Create popup container
+    const popupContainer = document.createElement('div');
+    popupContainer.classList.add('popup-container');
+
+    // Create popup content
+    const popupContent = document.createElement('div');
+    popupContent.classList.add('popup-content');
+
+    // Create close button
+    const closeButton = document.createElement('span');
+    closeButton.classList.add('close');
+    closeButton.innerHTML = '&times;';
+
+    // Create image element
+    const popupImage = document.createElement('img');
+    popupImage.classList.add('popup-image');
+    popupImage.src = imageUrl;
+
+    // Append elements to popup content
+    popupContent.appendChild(closeButton);
+    popupContent.appendChild(popupImage);
+
+    // Append popup content to popup container
+    popupContainer.appendChild(popupContent);
+
+    // Append popup container to body
+    document.body.appendChild(popupContainer);
+
+    // Close popup when clicking on close button
+    closeButton.addEventListener('click', function() {
+        document.body.removeChild(popupContainer);
+    });
+
+    // Close popup when clicking outside of the image
+    window.addEventListener('click', function(event) {
+        if (event.target === popupContainer) {
+            document.body.removeChild(popupContainer);
+        }
+    });
+}
