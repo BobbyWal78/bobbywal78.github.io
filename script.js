@@ -34,9 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var subject = document.getElementById('subject').value;
         var message = document.getElementById('message').value;
         
-        // Here you would send the form data to your backend for processing
-        
-        // For demonstration purposes, let's assume the form was successfully submitted
+                
         // Display a popup message
         messageSent.style.display = 'block'; // Show the message
         setTimeout(function () {

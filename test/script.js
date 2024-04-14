@@ -15,3 +15,9 @@ function hideImage() {
     enlargedImageContainer.style.display = "none";
     overlay.style.display = "none";
 }
+
+
+
+var flkty = new Flickity('.carousel', {
+    // Flickity options here
+  });
