@@ -18,16 +18,32 @@ function subscribe() {
 // end of follow me subscribe function //
 
 
+//  pop-up message when the contact form has been completed
 
-document.getElementById("submitBtn").addEventListener("click", function(event) {
-    event.preventDefault(); // Prevent the default form submission
-    
-    // Display message sent pop-up box
-    alert("Message Sent!");
+document.addEventListener('DOMContentLoaded', function () {
+    var contactForm = document.getElementById('contactForm');
+    var submitBtn = document.getElementById('submitBtn');
+    var messageSent = document.getElementById('messageSent');
 
-    // Clear form fields
-    document.getElementById("name").value = "";
-    document.getElementById("email").value = "";
-    document.getElementById("subject").value = "";
-    document.getElementById("message").value = "";
+    submitBtn.addEventListener('click', function (event) {
+        event.preventDefault(); // Prevent form submission
+        
+        // Get form data
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var subject = document.getElementById('subject').value;
+        var message = document.getElementById('message').value;
+        
+        // Here you would send the form data to your backend for processing
+        
+        // For demonstration purposes, let's assume the form was successfully submitted
+        // Display a popup message
+        messageSent.style.display = 'block'; // Show the message
+        setTimeout(function () {
+            messageSent.style.display = 'none'; // Hide the message after 3 seconds
+        }, 3000);
+
+        // Clear the form fields
+        contactForm.reset();
+    });
 });
