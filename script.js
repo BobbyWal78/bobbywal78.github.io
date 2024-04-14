@@ -1,4 +1,4 @@
-// script.js
+// follow Me Subscrobe function //
 
 function subscribe() {
     // Get the email address entered by the user
@@ -14,3 +14,25 @@ function subscribe() {
         alert('Please enter your email address.');
     }
 }
+
+// end of follow me subscribe function //
+
+
+// contact form //
+
+
+document.getElementById("submitBtn").addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent the default form submission
+    
+    // Display message sent pop-up box
+    alert("Message Sent!");
+
+    // Clear form fields
+    document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("subject").value = "";
+    document.getElementById("message").value = "";
+});
+
+
+//end of contact form //
