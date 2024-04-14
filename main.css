@@ -47,23 +47,23 @@ h1, h2, h3, h4, h5, h6, p{
     margin: 0 auto;
 }
 .btn{
-    background: var(--darkGreen);
+    background: var(--color-bg-4);
     border: none;
     display: block;
     width: 150px;
     text-align: center;
-    color: var(--darkGreen);
+    color: var(--color-light);
     text-transform: uppercase;
     background: transparent;
     font-size: 15px;
     padding: 12px;
-    border: 2px solid var(--darkGreen);
+    border: 2px solid var(--color-light);
     border-radius: 25px;
     margin: 15px 0;
     transition: var(--transition);
 }
 .btn:hover{
-    background: var(--darkGreen);
+    background: var(--color-bg-3);
     color: #fff;
 }
 .active{
@@ -450,7 +450,7 @@ blockquote span{
     font-size: 16px;
     padding: 10px 15px;
     margin: 10px 0;
-    border: 1px solid var(--lightGreen);
+    border: 1px solid var(--color-bg-3);
     outline: none;
     border-radius: 5px;
 }
@@ -458,11 +458,11 @@ blockquote span{
     padding: 0 20px;
 }
 
-/** message sent popop *****/
+/** message sent pop up *****/
 #messageSent {
     display: none;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #3e001b;
+    color: #e2a2a5;
     text-align: center;
     padding: 10px;
     margin-top: 10px;
@@ -527,7 +527,7 @@ blockquote span{
     cursor: pointer;
 }
 .subs button:hover{
-    color: #1650ba;
+    color: var(--darkGreen);
 }
 .footer > p{
     text-align: center;
