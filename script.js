@@ -18,8 +18,6 @@ function subscribe() {
 // end of follow me subscribe function //
 
 
-// contact form //
-
 
 document.getElementById("submitBtn").addEventListener("click", function(event) {
     event.preventDefault(); // Prevent the default form submission
@@ -33,6 +31,3 @@ document.getElementById("submitBtn").addEventListener("click", function(event) {
     document.getElementById("subject").value = "";
     document.getElementById("message").value = "";
 });
-
-
-//end of contact form //
