@@ -1,15 +1,25 @@
-const showBtn = document.querySelector('.navBtn');
-const topNav = document.querySelector('.top-nav');
+// script.js
 
-showBtn.addEventListener('click', function(){
-    if(topNav.classList.contains('showNav')){
-        topNav.classList.remove('showNav');
-        showBtn.innerHTML = '<i class = "fas fa-bars"></i>';
+function subscribe() {
+    // Get the email address entered by the user
+    var email = document.getElementById('email').value;
+
+    // Check if the email is not empty
+    if (email.trim() !== '') {
+        // Display a popup message
+        alert('Thank You For Subscribing!');
     } else {
-        topNav.classList.add('showNav');
-        showBtn.innerHTML = '<i class = "fas fa-times"></i>';
+        // If email is empty, prompt the user to enter an email address
+        alert('Please enter your email address.');
     }
+}
+
+// Add an event listener to the button
+document.getElementById("submitBtn").addEventListener("click", function() {
+    // Display the message
+    document.getElementById("messageSent").style.display = "block";
 });
 
-/* Lightbox */
-var lightbox = new SimpleLightbox('.gallery a', { /* options */ });
+
+
+

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services & Rates</title>
+<style>
+  /* Style for full screen mode */
+  .fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fullscreen img {
+    max-width: 90%;
+    max-height: 90%;
+  }
+</style>
+</head>
+<body>
+
+<!-- main -->
+<section class="section-two">
+    <div class="container">
+        <h2>Services & Rates</h2>
+        <span>I offer a variety of photography services tailored to meet your needs, including: Portrait Photography: Event Coverage:</span>
+        <div class="insta-imgs">
+            <div>
+                <img src="Docs/assets/everything.jpg" onclick="toggleFullScreen(this)">
+                <div class="icon-overlay flex">
+                    <i class="fa-solid fa-camera"></i>
+                </div>
+            </div>
+            <div>
+                <img src="Docs/assets/group.jpg" onclick="toggleFullScreen(this)">
+                <div class="icon-overlay flex">
+                    <i class="fa-solid fa-camera"></i>
+                </div>
+            </div>
+            <div>
+                <img src="Docs/assets/personal.jpg" onclick="toggleFullScreen(this)">
+                <div class="icon-overlay flex">
+                    <i class="fa-solid fa-camera"></i>
+                </div>
+            </div>
+            <div>
+                <img src="Docs/assets/wedding.jpg" onclick="toggleFullScreen(this)">
+                <div class="icon-overlay flex">
+                    <i class="fa-solid fa-camera"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+  // Function to toggle full screen mode
+  function toggleFullScreen(image) {
+    if (!document.fullscreenElement) {
+      image.classList.add('fullscreen');
+      document.documentElement.requestFullscreen().catch(err => {
+        console.error(`Error attempting to enable full-screen mode: ${err.message}`);
+      });
+    } else {
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+        image.classList.remove('fullscreen');
+      }
+    }
+  }
+</script>
+
+</body>
+</html>
