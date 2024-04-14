@@ -84,15 +84,14 @@
                     </div>
                 </div>
 
-                <div class = "contact-bottom">
-                    <form class = "form">
-                        <input type = "text" placeholder="Your Name">
-                        <input type = "email" placeholder="Your Email">
-                        <input type = "text" placeholder="Subject">
-                        <textarea rows = "9" placeholder="Message"></textarea>
-                        <button type="submit" class="btn" id="submitBtn">Send Message</button>
+                <div class="contact-bottom">
+                    <form class="form" id="contactForm">
+                        <input type="text" id="name" placeholder="Your Name">
+                        <input type="email" id="email" placeholder="Your Email">
+                        <input type="text" id="subject" placeholder="Subject">
+                        <textarea rows="9" id="message" placeholder="Message"></textarea>
+                        <button type="button" class="btn" id="submitBtn" onclick="submitForm()">Send Message</button>
                         <div id="messageSent" style="display: none;">Message Sent!</div>
-
                     </form>
 
                     <!-- Map -->
