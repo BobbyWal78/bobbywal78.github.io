@@ -17,6 +17,10 @@ function subscribe() {
     }
 }
 
+				// Add an event listener to the button
+                document.getElementById("submitBtn").addEventListener("click", function() {
+                    // Display the message
+                    document.getElementById("messageSent").style.display = "block";
 
 
 
