@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Disable Right Click on Images</title>
+<script>
+    window.onload = function() {
+        var images = document.getElementsByTagName('img');
+        for (var i = 0; i < images.length; i++) {
+            images[i].oncontextmenu = function(e) {
+                e.preventDefault();
+                alert("Images cannot be saved.");
+            };
+        }
+    };
+</script>
+</head>
+<body>
+
+<h2>Right-click on the images to see the effect</h2>
+
+<img src="Docs/Assets/INSTA1.jpg" alt="Image 1">
+<img src="Docs/Assets/INSTA2.jpg" alt="Image 2">
+<img src="Docs/Assets/INSTA3.jpg" alt="Image 3">
+
+</body>
+</html>
