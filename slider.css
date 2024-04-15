@@ -142,5 +142,17 @@ img{
 .img{height: 370px;}
 
 
-
-
+/* for return button */
+.return-button {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 9999; /* Ensure the button is on top of other elements */
+    padding: 10px 20px;
+    background-color: #e2a2a5;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
