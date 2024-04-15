@@ -1,63 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charles Atkins Photography</title>
-    <!-- GOOGLE FONT (Monserrat) -->
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="slider.css">
-    <!-- Fontawesome for Social icons -->
-<script src="https://kit.fontawesome.com/29a6805fd8.js" crossorigin="anonymous"></script>
-    
-  </head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Horizontal Text Scroll</title>
+<style>
+    .scroll-container {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        white-space: nowrap;
+    }
+
+    .scroll-text {
+        display: inline-block;
+        padding-left: 100%;
+        animation: scroll 40s linear infinite; /* Adjust speed by changing '10s' */
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(0%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+</style>
+</head>
 <body>
-
-
-    <div class="container">
-        <span class="slider" id="slider1"></span>
-        <span class="slider" id="slider2"></span>
-        <span class="slider" id="slider3"></span>
-        <span class="slider" id="slider4"></span>
-        <span class="slider" id="slider5"></span>
-        <span class="slider" id="slider6"></span>
-        <span class="slider" id="slider7"></span>
-
-        <div class="imgContainer">
-
-           <div class="slide_div" id="slide_1">
-            <img src="Docs/Assets/header.jpg" alt="" class="img" id="img1">
-            <a href="#slider1" class="button" id="button1"></a>
-           </div>
-           <div class="slide_div" id="slide_2">
-            <img src="Docs/Assets/INSTA2.jpg" alt="" class="img" id="img2">
-            <a href="#slider2" class="button" id="button2"></a>
-           </div>
-           <div class="slide_div" id="slide_3">
-            <img src="Docs/Assets/INSTA3.jpg" alt="" class="img" id="img3">
-            <a href="#slider3" class="button" id="button3"></a>
-           </div>
-           <div class="slide_div" id="slide_4">
-            <img src="Docs/Assets/INSTA4.jpg" alt="" class="img" id="img4">
-            <a href="#slider4" class="button" id="button4"></a>
-           </div>
-           <div class="slide_div" id="slide_5">
-            <img src="Docs/Assets/INSTA5.jpg" alt="" class="img" id="img5">
-            <a href="#slider5" class="button" id="button5"></a>
-           </div>
-           <div class="slide_div" id="slide_6">
-            <img src="Docs/Assets/INSTA6.jpg" alt="" class="img" id="img6">
-            <a href="#slider6" class="button" id="button6"></a>
-           </div>
-           <div class="slide_div" id="slide_7">
-            <img src="Docs/Assets/INSTA7.jpg" alt="" class="img" id="img7">
-            <a href="#slider7" class="button" id="button7"></a>
-           </div>
-
-        </div>
-        
+<div class="scroll-container">
+    <div class="scroll-text">
+        <!-- Your text goes here -->
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat
+        lectus libero, non gravida quam vehicula eu. Maecenas vitae molestie
+        ligula. Duis quis placerat quam. Nulla facilisi. Aenean venenatis
+        mauris sit amet ultrices suscipit. Integer vitae tristique libero.
     </div>
 </div>
-
 </body>
 </html>
