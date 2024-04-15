@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
+
+
 :root{
     --white: #ddd;
     --dark: #111;
@@ -731,7 +733,7 @@ blockquote span{
 }
 
 
-/* Style for full screen mode *
+/* Style for full screen mode */
   .fullscreen {
     position: fixed;
     top: 0;
@@ -747,10 +749,25 @@ blockquote span{
   .fullscreen img {
     max-width: 90%;
     max-height: 90%;
-  } */
+  }
 
 
-  /* services section images*/
+  /** services section main content*/
+  .services-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.services-section .container {
+    max-width: 800px; /* Adjust the maximum width as needed */
+    padding: 0 20px; /* Adjust the padding as needed */
+}
+/** end services section main*/
+
+
+/* services section images*/
 
 .image-container {
     display: flex;
@@ -770,7 +787,7 @@ blockquote span{
 }
 
 .image-container img:hover {
-    transform: scale(1.3);
+    transform: scale(3.1);
 }
 
 .expanded {
@@ -786,7 +803,7 @@ blockquote span{
 }
 
 .expanded img {
-    width: 10%;
+    width: 80%;
     height: auto;
     position: absolute;
     top: 50%;
@@ -795,5 +812,3 @@ blockquote span{
    border: 1px solid #a61010; /* Optional: Add border for images */
 }
 /* end services section images*/
-
-

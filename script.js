@@ -18,7 +18,7 @@ function subscribe() {
 // end of follow me subscribe function //
 
 
-//  pop-up message when the contact form has been completed
+//  pop-up message when the contact form.htmlhas been completed
 
 document.addEventListener('DOMContentLoaded', function () {
     var contactForm = document.getElementById('contactForm');
@@ -46,51 +46,35 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-// end of pop up message contact form
+// end of pop up message contact form.html
 
 
 
-// Function to handle image enlargement
-function enlargeImage(imageElement) {
-    const imageUrl = imageElement.src;
 
-    // Create popup container
-    const popupContainer = document.createElement('div');
-    popupContainer.classList.add('popup-container');
+// expand view container in services
+const images = document.querySelectorAll('.image-container img');
 
-    // Create popup content
-    const popupContent = document.createElement('div');
-    popupContent.classList.add('popup-content');
+    images.forEach(img => {
+        img.addEventListener('click', () => {
+            // Create expanded view container
+            const expandedView = document.createElement('div');
+            expandedView.classList.add('expanded');
 
-    // Create close button
-    const closeButton = document.createElement('span');
-    closeButton.classList.add('close');
-    closeButton.innerHTML = '&times;';
+            // Create image element in the expanded view
+            const expandedImg = document.createElement('img');
+            expandedImg.src = img.src;
+            expandedView.appendChild(expandedImg);
 
-    // Create image element
-    const popupImage = document.createElement('img');
-    popupImage.classList.add('popup-image');
-    popupImage.src = imageUrl;
+            // Add click event to remove expanded view when clicked outside the image
+            expandedView.addEventListener('click', () => {
+                expandedView.remove();
+            });
 
-    // Append elements to popup content
-    popupContent.appendChild(closeButton);
-    popupContent.appendChild(popupImage);
-
-    // Append popup content to popup container
-    popupContainer.appendChild(popupContent);
-
-    // Append popup container to body
-    document.body.appendChild(popupContainer);
-
-    // Close popup when clicking on close button
-    closeButton.addEventListener('click', function() {
-        document.body.removeChild(popupContainer);
+            // Append the expanded view to the body
+            document.body.appendChild(expandedView);
+        });
     });
 
-    // Close popup when clicking outside of the image
-    window.addEventListener('click', function(event) {
-        if (event.target === popupContainer) {
-            document.body.removeChild(popupContainer);
-        }
-    });
-}
+// END expand view container in services
+
+

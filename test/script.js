@@ -1,23 +1,22 @@
-function enlargeImage(image) {
-    var enlargedImageContainer = document.getElementById("enlarged-image-container");
-    var enlargedImage = document.getElementById("enlarged-image");
-    var overlay = document.getElementById("overlay");
+const images = document.querySelectorAll('.image-container img');
 
-    enlargedImage.src = image.src;
-    enlargedImageContainer.style.display = "block";
-    overlay.style.display = "block";
-}
+    images.forEach(img => {
+        img.addEventListener('click', () => {
+            // Create expanded view container
+            const expandedView = document.createElement('div');
+            expandedView.classList.add('expanded');
 
-function hideImage() {
-    var enlargedImageContainer = document.getElementById("enlarged-image-container");
-    var overlay = document.getElementById("overlay");
+            // Create image element in the expanded view
+            const expandedImg = document.createElement('img');
+            expandedImg.src = img.src;
+            expandedView.appendChild(expandedImg);
 
-    enlargedImageContainer.style.display = "none";
-    overlay.style.display = "none";
-}
+            // Add click event to remove expanded view when clicked outside the image
+            expandedView.addEventListener('click', () => {
+                expandedView.remove();
+            });
 
-
-
-var flkty = new Flickity('.carousel', {
-    // Flickity options here
-  });
+            // Append the expanded view to the body
+            document.body.appendChild(expandedView);
+        });
+    });
