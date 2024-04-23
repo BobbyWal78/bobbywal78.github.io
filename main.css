@@ -46,7 +46,7 @@ h1, h2, h3, h4, h5, h6, p{
     width: 90vw;
     margin: 0 auto;
 }
-.btn{
+/**.btn{
     background: var(--color-bg-4);
     border: none;
     display: block;
@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5, h6, p{
 .btn:hover{
     background: var(--color-bg-3);
     color: #fff;
-}
+}**/
 .active{
     color: var(--color-bg-4)!important;
 }
