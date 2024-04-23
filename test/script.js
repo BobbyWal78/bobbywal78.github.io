@@ -79,15 +79,3 @@ const images = document.querySelectorAll('.image-container img');
 
 
 
-// Disable Right Click on Images //
-window.onload = function() {
-    var images = document.getElementsByTagName('img');
-    for (var i = 0; i < images.length; i++) {
-        images[i].oncontextmenu = function(e) {
-            e.preventDefault();
-            alert("Images cannot be saved.");
-        };
-    }
-};
-
-// End of Disable Right Click on Images //
