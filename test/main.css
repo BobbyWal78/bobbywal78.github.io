@@ -440,38 +440,19 @@ blockquote{
 
 
 
-/***************** Media Queries *****************/
 
-/**@media screen and (min-width: 678px){
-    /* section five - KEEP*/
-    .contact-middle{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-column-gap: 20px;
-    }
+/****** screen styling  ******/
 
 
-@media screen and (min-width: 800px){
-  
-    /* section three portfolio*/
-    .gallery{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    
-}
-
-@media screen and (min-width: 992px){
     /********* header & footer *********/
     .nav-section{
         display: flex;
         justify-content: space-between;
     }
-     .navBtn{
-        display: none; 
-    }
+   
     .brand-and-navBtn{
+        padding: 10px;
+        margin: 10PX;
         flex: 0 0 10%;
         background: none;
     }
@@ -491,44 +472,45 @@ blockquote{
         margin-right: 40px;
         margin-left: 30px;
     }
+    
+    /* margin from top */
    .about{
-        margin-top: 0; /* margin from top */
+        margin-top: 0; 
     } 
-     /* section five contact
-    .contact-middle{
-        grid-template-columns: repeat(4, 1fr);
-    }
-    */
+
     .contact-bottom{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 40px;
     }
-}
 
-
-@media screen and (min-width: 1000px){
-     /* footer */
-    .footer-container{
+   .footer-container{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 20px;
     }
-}
 
-@media screen and (min-width: 1200px){
-    /* footer */
     .footer-container > div{
         width: 60%;
         margin-left: auto;
         margin-right: auto;
     }
 
-    /* section three - portfolio */
+    /* portfolio html - section 3*/
     .gallery{
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
-}
+    
+    /* contact html - section five */
+    .contact-middle{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 20px;
+    }
+
+    
+
 
 
 
