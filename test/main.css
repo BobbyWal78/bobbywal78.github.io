@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
-
-
+/**@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap'); **/
 
 :root{
     --white: #ddd;
@@ -20,15 +18,22 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+
+/*** text line height for pages*/
 body{  
-    line-height: 1.6;
+    line-height: 1.6; 
+    background: linear-gradient(rgba(108, 6, 6, 0.6), rgba(0, 0, 0, 0.6)), url("Docs/assets/background.jpg") center/cover no-repeat;
 }
+
+/** portfolio images*/
 img{
-    width: 100%;
+    width: 90%;  
     display: block;
 }
+
+
 ul li{
-    list-style: none;
+    list-style: none; 
 }
 a{
     text-decoration: none;
@@ -38,17 +43,22 @@ h1, h2, h3, h4, h5, h6, p{
     margin: 15px 0;
 }
 
+
+
 /********************** Utility Classes *******************/
 .flex{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+/** prevent horiz  scrollin**/
 .container{
-    width: 90vw;
+    width: 90vw; 
     margin: 0 auto;
-}
-.btn{
+} 
+
+/**.btn{
     background: var(--color-bg-4);
     border: none;
     display: block;
@@ -67,7 +77,9 @@ h1, h2, h3, h4, h5, h6, p{
 .btn:hover{
     background: var(--color-bg-3);
     color: #fff;
-}
+}**/
+
+/** actuve page nav bar color*/
 .active{
     color: var(--color-bg-4)!important;
 }
@@ -79,11 +91,14 @@ h1, h2, h3, h4, h5, h6, p{
 .header{
     /**min-height: 100vh; **/
     background: linear-gradient(rgba(108, 6, 6, 0.6), rgba(0, 0, 0, 0.6)), url("Docs/assets/header.jpg") center/cover no-repeat;
-    color: #fff;
+    color: #fff; /** header background text color **/
 }
+ /**navigation bar text color**/
 .top-nav a{
-    color: #fff;
+    color: #b99090;
 }
+
+/**
 .brand-and-navBtn{
     background: #000;
     position: relative;
@@ -95,13 +110,13 @@ h1, h2, h3, h4, h5, h6, p{
     font-weight: 900;
     font-size: 25px;
     padding: 15px 25px;
-    color: var(--color-bg-4);
+    color: var(--color-bg-4); 
 }
 .brand-name{
     letter-spacing: 5px;
     cursor: pointer;
 }
-
+ 
 
 .navBtn{
     width: 40px;
@@ -114,20 +129,27 @@ h1, h2, h3, h4, h5, h6, p{
     color: #000;
     transition: var(--transition);
 }
+
 .top-nav{
     background: #000;
     transform: translateY(-600px);
     transition: var(--transition);
 }
+
 .showNav{
     transform: translateY(0);
 }
+
 .search-icon{
     display: none;
 }
+**/
+
+/** padding from top**/
 .top-nav ul li{
     padding: 5px 0;
 }
+/** nav bar position*/
 .top-nav ul a{
     position: relative;
     font-weight: 250;
@@ -135,6 +157,8 @@ h1, h2, h3, h4, h5, h6, p{
     text-align: center;
     display: block;
 }
+
+/**hover transition**/
 .top-nav ul a::after{
     content: "";
     height: 2px;
@@ -146,21 +170,26 @@ h1, h2, h3, h4, h5, h6, p{
     width: 0;
     transition: var(--transition);
 }
+
+/** hover transition underline width**/
 .top-nav ul a:hover::after{
     width: 100px;
 }
 .about{
     margin-top: -160px;
 }
+/**photographer image**/
 .about-content img{
-    width: 190px;
-    height: 190px;
+    width: 240px;
+    height: 240px;
     border-radius: 50%;
 }
+
+/** background behind photographer image*/
 .about-img{
-    background: #fff;
-    width: 200px;
-    height: 200px;
+    background: var(--color-light);
+    width: 250px;
+    height: 250px;
     margin: 0 auto;
     border-radius: 50%;
 }
@@ -188,6 +217,7 @@ blockquote{
     text-align: center;
 }
 blockquote span{
+    padding: 5px 0;
     font-size: 14px;
     text-transform: uppercase;
     color: var(--color-light);
@@ -195,11 +225,14 @@ blockquote span{
     letter-spacing: 5px;
     display: block;
 }
+
+/**width between social icons*/
 .social-icons{
-    width: 400px;
+    width: 300px;
     margin: 40px auto 0 auto;
     padding-bottom: 30px;
 }
+
 .social-icons ul a{
     color: var(--color-bg-4);
     font-size: 30px;
@@ -291,11 +324,12 @@ blockquote span{
 }
 **/
 
-/* section two **/
+/** SERVICE HTML STYLING**/
 .section-two{
     margin: 40px 0;
 }
 .section-two h2{
+    color: var(--color-light);
     text-align: center;
     font-size: 70px;
 }
@@ -303,9 +337,10 @@ blockquote span{
     color: var(--color-light);
     text-align: center;
     display: block;
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 30px;
 }
+/**
 .insta-imgs{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -329,11 +364,11 @@ blockquote span{
     opacity: 1;
 }
 
-/************* end of index.html ***********/
+**/
 
 
 
-/**************** gallery.html ***************/
+/**PORTFOLION STYLING ***************/
 
 /* section three */
 .section-three{
@@ -358,13 +393,13 @@ blockquote span{
     text-transform: uppercase;
 }
 
-/************** end of gallery.html ***********/
+/************** end of portfolio.html ***********/
 
 
 
 /****************** services.html ****************/
 
-/* section four */
+/* section four
 .section-four{
     margin: 40px 0;
 }
@@ -400,7 +435,7 @@ blockquote span{
     font-weight: 300;
 }
 
-/*************** end of blog.html ***********/
+/*************** end of services.html ***********/
 
 
 
@@ -460,7 +495,7 @@ blockquote span{
     padding: 0 20px;
 }
 
-/** message sent pop up *****/
+/****** MEssage Sent Pop Up In Contact form *****/
 #messageSent {
     display: none;
     background-color: #3e001b;
@@ -495,10 +530,10 @@ blockquote span{
 }
 .footer-container p{
     opacity: 0.7;
-}
+} 
 .subs{
     background: #000000;
-    width: 350px;
+    width: 550px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -552,41 +587,41 @@ blockquote span{
 }
 
 @media screen and (min-width: 800px){
-    /* section two */
+    /* section two services */
     .insta-imgs{
         grid-template-columns: repeat(4, 1fr);
     }
 
-    /* section three */
+    /* section three portfolio*/
     .gallery{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
 
-    /* section four */
+    /* section four 
     .blog-wrapper-sm{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 20px;
-    }
+    }  */
     
 }
 
 @media screen and (min-width: 992px){
-    /* header & footer */
+    /********* header & footer *********/
     .nav-section{
         display: flex;
         justify-content: space-between;
     }
-    .navBtn{
-        display: none;
+     .navBtn{
+        display: none; 
     }
     .brand-and-navBtn{
         flex: 0 0 10%;
         background: none;
     }
     .top-nav{
-        flex: 0 1 80%;
+        flex: 0 1 90%;
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -598,13 +633,13 @@ blockquote span{
         display: flex;
     }
     .top-nav ul li{
-        margin-right: 30px;
+        margin-right: 40px;
         margin-left: 30px;
     }
-    .about{
-        margin-top: 0;
-    }
-    .search-icon{
+   .about{
+        margin-top: 0; /* margin from top */
+    } 
+ /*   .search-icon{
         flex: 0 0 10%;
         display: block;
         display: flex;
@@ -616,9 +651,9 @@ blockquote span{
     }
     .search-icon i:hover{
         transform: scale(1.2);
-    }
+    } */
 
-    /* section five */
+    /* section five contact*/
     .contact-middle{
         grid-template-columns: repeat(4, 1fr);
     }
@@ -631,7 +666,7 @@ blockquote span{
 
 
 @media screen and (min-width: 1000px){
-    /* section one */
+    /* section one 
     .section-one .container{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -647,12 +682,12 @@ blockquote span{
         height: 100%;
     }
 
-    /* section four */
+    /* section four 
     .blog-wrapper-lg{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 20px;
-    }
+    }*/
 
     /* footer */
     .footer-container{
@@ -670,29 +705,29 @@ blockquote span{
         margin-right: auto;
     }
 
-    /* section three */
+    /* section three - portfolio */
     .gallery{
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media screen and (min-width: 1400px){
-    /* section four */
+    /* section four 
     .blog-wrapper-sm{
         grid-template-columns: repeat(4, 1fr);
-    }
+    }*/
 }
 
 /*************** extra small sized screen ******************/
 
 @media screen and (max-width: 500px){
-    /* overall styling */
+    /***** overall styling *****/
     .header{
         padding-bottom: 30px;
     }
-    .social-icons{
+/*    .social-icons{
         display: none;
-    }
+    } */
     .about-content h3{
         width: 100%;
     }
@@ -700,9 +735,9 @@ blockquote span{
         font-size: 16px;
         width: 100%;
     }
-    .subs{
+/*    .subs{
         width: 280px;
-    }
+    } */
     .subs i{
         display: none;
     }
@@ -722,18 +757,18 @@ blockquote span{
     p{
         font-size: 15px;
     }
-    .btn{
+ /*   .btn{
         font-size: 14px;
         padding: 8px 0;
-    }
-    .work-imgs{
+    } */
+ /*   .work-imgs{
         grid-template-columns: 1fr;
         grid-row-gap: 20px;
-    }
+    } */
 }
 
 
-/* Style for full screen mode */
+/* Style for full screen mode *
   .fullscreen {
     position: fixed;
     top: 0;
@@ -749,25 +784,10 @@ blockquote span{
   .fullscreen img {
     max-width: 90%;
     max-height: 90%;
-  }
+  } */
 
 
-  /** services section main content*/
-  .services-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.services-section .container {
-    max-width: 800px; /* Adjust the maximum width as needed */
-    padding: 0 20px; /* Adjust the padding as needed */
-}
-/** end services section main*/
-
-
-/* services section images*/
+  /***** services section images*/
 
 .image-container {
     display: flex;
@@ -787,7 +807,7 @@ blockquote span{
 }
 
 .image-container img:hover {
-    transform: scale(3.1);
+    transform: scale(1.3);
 }
 
 .expanded {
@@ -803,7 +823,7 @@ blockquote span{
 }
 
 .expanded img {
-    width: 80%;
+    width: 10%;
     height: auto;
     position: absolute;
     top: 50%;
@@ -812,3 +832,14 @@ blockquote span{
    border: 1px solid #a61010; /* Optional: Add border for images */
 }
 /* end services section images*/
+
+div.scroll-container {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+  }
+  
+  div.scroll-container img {
+    padding: 10px;
+  }
