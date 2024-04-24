@@ -7,7 +7,7 @@
 }  
 
 
-.images-portfolio{
+.container{
     width: 100%;
     height: 100vh;
     background: #3e001b;
@@ -20,7 +20,7 @@
     align-items: center;
     justify-content: center;
 }
-.images-box{
+.img-box{
     width: 100px;
     height: 800px;
     margin: 10px;
@@ -31,22 +31,22 @@
     position: relative;
     transition: width 0.5s;
 }
-.images-box:nth-child(2){
+.img-box:nth-child(2){
     background: url(Docs/Assets/HeadSHot\ \(2\).jpg);
     background-size: cover;
     background-position: center;
 }
-.images-box:nth-child(3){
+.img-box:nth-child(3){
     background: url(Docs/Assets/HeadSHot\ \(3\).jpg);
     background-size: cover;
     background-position: center;
 }
-.images-box:nth-child(4){
+.img-box:nth-child(4){
     background: url(Docs/Assets/HeadSHot\ \(4\).jpg);
     background-size: cover;
     background-position: center;
 }
-.images-box:nth-child(5){
+.img-box:nth-child(5){
     background: url(Docs/Assets/HeadSHot\ \(5\).jpg);
     background-size: cover;
     background-position: center;
@@ -56,7 +56,7 @@
     background-size: cover;
     background-position: center;
 }
-.images-box h3{
+.img-box h3{
     color: #fff;
     position: absolute;
     bottom:0;
@@ -64,11 +64,25 @@
     opacity: 0;
     transition: bottom 0.5s, opacity 0.5s;
 }
-.images-box:hover{
+.img-box:hover{
     width: 550px;
     cursor: pointer;
 }
-.images-box:hover h3{
+.img-box:hover h3{
     opacity: 1;
     bottom: 25px
+}
+/* for return button */
+.return-button {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 9999; /* Ensure the button is on top of other elements */
+    padding: 10px 20px;
+    background-color: #e2a2a5;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
 }
