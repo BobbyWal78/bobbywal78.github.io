@@ -1,4 +1,4 @@
-// follow Me Subscrobe function //
+// follow Me Subscrbe button //
 
 function subscribe() {
     // Get the email address entered by the user
@@ -14,11 +14,10 @@ function subscribe() {
         alert('Please enter your email address.');
     }
 }
-
 // end of follow me subscribe function //
 
 
-//  pop-up message when the contact form.htmlhas been completed
+//  pop-up message when the contact form has been completed
 
 document.addEventListener('DOMContentLoaded', function () {
     var contactForm = document.getElementById('contactForm');
@@ -35,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var message = document.getElementById('message').value;
         
                 
-        // Display a popup message
+        // Display the popup message
         messageSent.style.display = 'block'; // Show the message
         setTimeout(function () {
             messageSent.style.display = 'none'; // Hide the message after 3 seconds
@@ -49,23 +48,21 @@ document.addEventListener('DOMContentLoaded', function () {
 // end of pop up message contact form.html
 
 
-
-
-// expand view container in services
+// expand view container in services html
 const images = document.querySelectorAll('.image-container img');
 
     images.forEach(img => {
         img.addEventListener('click', () => {
-            // Create expanded view container
+            // Create the expanded view container
             const expandedView = document.createElement('div');
             expandedView.classList.add('expanded');
 
-            // Create image element in the expanded view
+            // Create the image element in the expanded view
             const expandedImg = document.createElement('img');
             expandedImg.src = img.src;
             expandedView.appendChild(expandedImg);
 
-            // Add click event to remove expanded view when clicked outside the image
+            // Add a click event to remove expanded view when clicked outside the image
             expandedView.addEventListener('click', () => {
                 expandedView.remove();
             });

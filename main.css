@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 /**@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap'); **/
 
+=======
+>>>>>>> fcc8dfc883d8feb7087db23a0efb57480eaa003b
 :root{
     --white: #ddd;
     --dark: #111;
@@ -45,7 +48,11 @@ h1, h2, h3, h4, h5, h6, p{
 
 
 
+<<<<<<< HEAD
 /********************** Utility Classes *******************/
+=======
+/********************** My Utility Classes *******************/
+>>>>>>> fcc8dfc883d8feb7087db23a0efb57480eaa003b
 .flex{
     display: flex;
     justify-content: center;
@@ -63,7 +70,10 @@ h1, h2, h3, h4, h5, h6, p{
     color: var(--color-bg-4)!important;
 }
 
-/**************** end of Utility Classes *******************/
+/**************** end of My Utility Classes *******************/
+
+
+
 
 
 
@@ -71,14 +81,17 @@ h1, h2, h3, h4, h5, h6, p{
 /********************** Header styling *********************/
 
 .header{
-    /**min-height: 100vh; **/
     background: linear-gradient(rgba(108, 6, 6, 0.6), rgba(0, 0, 0, 0.6)), url("Docs/assets/header.jpg") center/cover no-repeat;
     color: #fff; /** header background text color **/
 }
  /**navigation bar text color**/
 .top-nav a{
     color: var(--white);
+<<<<<<< HEAD
 }
+=======
+} 
+>>>>>>> fcc8dfc883d8feb7087db23a0efb57480eaa003b
 
 
 /** padding from top**/
@@ -190,11 +203,44 @@ blockquote span{
     background: var(--color-light);
     border-color: var(--color-light);
 }
+.nav-section{
+    display: flex;
+    justify-content: space-between;
+}
+.brand-and-navBtn{
+    padding: 10px;
+    margin: 10PX;
+    flex: 0 0 10%;
+    background: none;
+}
+.top-nav{
+    flex: 0 1 90%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transition: transform 0s ease;
+    transform: translateY(0);
+    background: transparent;
+}
+.top-nav ul{
+    display: flex;
+}
+.top-nav ul li{
+    margin-right: 40px;
+    margin-left: 30px;
+}
 
+/* margin from top */
+.about{
+    margin-top: 0; 
+} 
 /********************* End of Header ***********************/
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> fcc8dfc883d8feb7087db23a0efb57480eaa003b
 /***** SERVICES HTML STYLING**/
 .section-two{
     margin: 40px 0;
@@ -264,7 +310,10 @@ blockquote span{
 
 /******    PORTFOLIO STYLING ***************/
 
+<<<<<<< HEAD
 /* section three */
+=======
+>>>>>>> fcc8dfc883d8feb7087db23a0efb57480eaa003b
 .section-three{
     margin: 40px 0;
 }
@@ -291,10 +340,19 @@ blockquote span{
     font-weight: 400;
     text-transform: uppercase;
 }
+<<<<<<< HEAD
+=======
+/* portfolio html - section 3*/
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+>>>>>>> fcc8dfc883d8feb7087db23a0efb57480eaa003b
 
 /************** end of portfolio.html ***********/
 
 
+<<<<<<< HEAD
 
 
 
@@ -302,6 +360,10 @@ blockquote span{
 /*************** contact.html **************/
 
 /* section five */
+=======
+/*************** contact.html **************/
+
+>>>>>>> fcc8dfc883d8feb7087db23a0efb57480eaa003b
 .section-five{
     margin: 40px 0;
 }
@@ -361,6 +423,14 @@ blockquote{
 .contact-bottom .form{
     padding: 0 20px;
 }
+<<<<<<< HEAD
+=======
+.contact-middle{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+}
+>>>>>>> fcc8dfc883d8feb7087db23a0efb57480eaa003b
 
 /****** MEssage Sent Pop Up In Contact form *****/
 #messageSent {
@@ -435,6 +505,7 @@ blockquote{
     text-align: center;
     font-size: 14px;
 }
+<<<<<<< HEAD
 
 /******************* end of footer STYLING ****************/
 
@@ -516,3 +587,23 @@ blockquote{
 
 
 
+=======
+.contact-bottom{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 40px;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.footer-container > div{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/******************* end of footer STYLING ****************/
+>>>>>>> fcc8dfc883d8feb7087db23a0efb57480eaa003b
