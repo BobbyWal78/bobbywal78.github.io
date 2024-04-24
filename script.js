@@ -1,23 +1,23 @@
-// follow Me Subscrbe button //
+// ********  SUBSCRIBRE BUTTON FUNCTION, ALL PAGES   ****/
 
-function subscribe() {
-    // Get the email address entered by the user
+    function subscribe() {
+         // Get the email address entered by the user
     var email = document.getElementById('email').value;
    
-        // Check if the email is not empty
+        // If Email Address is not empty
     if (email.trim() !== '') {
         // Display a popup message
-        alert('Thank You For Subscribing!');
+    alert('Thank You For Subscribing!');
      
     } else {
         // If email is empty, prompt the user to enter an email address
-        alert('Please enter your email address.');
+    alert('Please enter your email address.');
     }
 }
-// end of follow me subscribe function //
+// ********  END SUBSCRIBRE BUTTON FUNCTION    ****/
 
 
-//  pop-up message when the contact form has been completed
+//*********** CONTACT FORM SUBMISSION, CONTACE PAGE ***********/
 
 document.addEventListener('DOMContentLoaded', function () {
     var contactForm = document.getElementById('contactForm');
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var messageSent = document.getElementById('messageSent');
 
     submitBtn.addEventListener('click', function (event) {
-        event.preventDefault(); // Prevent form submission
+  //      event.preventDefault(); // Prevent form submission
         
         // Get form data
         var name = document.getElementById('name').value;
@@ -35,44 +35,14 @@ document.addEventListener('DOMContentLoaded', function () {
         
                 
         // Display the popup message
-        messageSent.style.display = 'block'; // Show the message
+        messageSent.style.display = 'block'; 
+        // Hide the message after 3 seconds
         setTimeout(function () {
-            messageSent.style.display = 'none'; // Hide the message after 3 seconds
+            messageSent.style.display = 'none'; 
         }, 3000);
-
-        // Clear the form fields
+        // Clear the form fields after send message button clicked
         contactForm.reset();
     });
 });
 
-// end of pop up message contact form.html
-
-
-// expand view container in services html
-const images = document.querySelectorAll('.image-container img');
-
-    images.forEach(img => {
-        img.addEventListener('click', () => {
-            // Create the expanded view container
-            const expandedView = document.createElement('div');
-            expandedView.classList.add('expanded');
-
-            // Create the image element in the expanded view
-            const expandedImg = document.createElement('img');
-            expandedImg.src = img.src;
-            expandedView.appendChild(expandedImg);
-
-            // Add a click event to remove expanded view when clicked outside the image
-            expandedView.addEventListener('click', () => {
-                expandedView.remove();
-            });
-
-            // Append the expanded view to the body
-            document.body.appendChild(expandedView);
-        });
-    });
-
-// END expand view container in services
-
-
-
+//*********** END OF CONTACT FORM SUBMISSION ***********/
