@@ -1,21 +1,13 @@
 *{
     margin: 0;
     padding: 0;
-<<<<<<< HEAD
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
     background: linear-gradient(rgba(108, 6, 6, 0.6), rgba(0, 0, 0, 0.6)),;  
 }  
 
 
 .images-portfolio{
-=======
-    font-family: 'Montserrat', sans-serif;
-    box-sizing: border-box;
-    background: linear-gradient(rgba(108, 6, 6, 0.6), rgba(0, 0, 0, 0.6)),;  
-}  
-.images{
->>>>>>> fcc8dfc883d8feb7087db23a0efb57480eaa003b
     width: 100%;
     height: 100vh;
     background: #3e001b;
@@ -33,20 +25,12 @@
     height: 800px;
     margin: 10px;
     border-radius: 50px;
-<<<<<<< HEAD
     background: url(Docs/Assets/HeadSHot\ \(1\).jpg);
-=======
-    background: url(Docs/assets/HeadSHot\ \(1\).jpg);
->>>>>>> fcc8dfc883d8feb7087db23a0efb57480eaa003b
     background-size: cover;
     background-position: center;
     position: relative;
     transition: width 0.5s;
 }
-<<<<<<< HEAD
-=======
-<<<<<<<< HEAD:test/slide.css
->>>>>>> fcc8dfc883d8feb7087db23a0efb57480eaa003b
 .images-box:nth-child(2){
     background: url(Docs/Assets/HeadSHot\ \(2\).jpg);
     background-size: cover;
@@ -64,37 +48,11 @@
 }
 .images-box:nth-child(5){
     background: url(Docs/Assets/HeadSHot\ \(5\).jpg);
-<<<<<<< HEAD
-=======
-========
-.img-box:nth-child(2){
-    background: url(Docs/assets/HeadSHot\ \(2\).jpg);
-    background-size: cover;
-    background-position: center;
-}
-.img-box:nth-child(3){
-    background: url(Docs/assets/HeadSHot\ \(3\).jpg);
-    background-size: cover;
-    background-position: center;
-}
-.img-box:nth-child(4){
-    background: url(Docs/assets/HeadSHot\ \(4\).jpg);
-    background-size: cover;
-    background-position: center;
-}
-.img-box:nth-child(5){
-    background: url(Docs/assets/HeadSHot\ \(5\).jpg);
->>>>>>>> fcc8dfc883d8feb7087db23a0efb57480eaa003b:slide.css
->>>>>>> fcc8dfc883d8feb7087db23a0efb57480eaa003b
     background-size: cover;
     background-position: center;
 }
 .img-box:nth-child(6){
-<<<<<<< HEAD
     background: url(Docs/Assets/HeadSHot\ \(6\).jpg);
-=======
-    background: url(Docs/assets/HeadSHot\ \(6\).jpg);
->>>>>>> fcc8dfc883d8feb7087db23a0efb57480eaa003b
     background-size: cover;
     background-position: center;
 }
