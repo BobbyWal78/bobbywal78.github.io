@@ -1,17 +1,22 @@
 // ********  SUBSCRIBRE BUTTON FUNCTION, ALL PAGES   ****/
 
-    function subscribe() {
-         // Get the email address entered by the user
-    var email = document.getElementById('email').value;
+function subscribe() {
+    // Email address entered by the user
+    var emailField = document.getElementById('email');
+    var email = emailField.value.trim();
    
-        // If Email Address is not empty
-    if (email.trim() !== '') {
+    // If Email address is not empty
+    if (email !== '') {
+
         // Display a popup message
-    alert('Thank You For Subscribing!');
-     
+        alert('Thank You For Subscribing!');
+
+        // Reset the email field
+        emailField.value = '';
+        
     } else {
-        // If email is empty, prompt the user to enter an email address
-    alert('Please enter your email address.');
+        // If Email is empty, prompt the user to enter an email address
+        alert('Please enter your email address.');
     }
 }
 // ********  END SUBSCRIBRE BUTTON FUNCTION    ****/
@@ -25,8 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var messageSent = document.getElementById('messageSent');
 
     submitBtn.addEventListener('click', function (event) {
-  //      event.preventDefault(); // Prevent form submission
-        
+             
         // Get form data
         var name = document.getElementById('name').value;
         var email = document.getElementById('email').value;
@@ -36,13 +40,21 @@ document.addEventListener('DOMContentLoaded', function () {
                 
         // Display the popup message
         messageSent.style.display = 'block'; 
+
         // Hide the message after 3 seconds
         setTimeout(function () {
             messageSent.style.display = 'none'; 
         }, 3000);
+
         // Clear the form fields after send message button clicked
         contactForm.reset();
     });
 });
 
 //*********** END OF CONTACT FORM SUBMISSION ***********/
+
+
+
+
+
+
