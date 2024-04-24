@@ -25,34 +25,34 @@
     height: 800px;
     margin: 10px;
     border-radius: 50px;
-    background: url(Docs/Assets/HeadSHot\ \(1\).jpg);
+    background: url(Docs/assets/HeadSHot\ \(1\).jpg);
     background-size: cover;
     background-position: center;
     position: relative;
     transition: width 0.5s;
 }
 .img-box:nth-child(2){
-    background: url(Docs/Assets/HeadSHot\ \(2\).jpg);
+    background: url(Docs/assets/HeadSHot\ \(2\).jpg);
     background-size: cover;
     background-position: center;
 }
 .img-box:nth-child(3){
-    background: url(Docs/Assets/HeadSHot\ \(3\).jpg);
+    background: url(Docs/assets/HeadSHot\ \(3\).jpg);
     background-size: cover;
     background-position: center;
 }
 .img-box:nth-child(4){
-    background: url(Docs/Assets/HeadSHot\ \(4\).jpg);
+    background: url(Docs/assets/HeadSHot\ \(4\).jpg);
     background-size: cover;
     background-position: center;
 }
 .img-box:nth-child(5){
-    background: url(Docs/Assets/HeadSHot\ \(5\).jpg);
+    background: url(Docs/assets/HeadSHot\ \(5\).jpg);
     background-size: cover;
     background-position: center;
 }
 .img-box:nth-child(6){
-    background: url(Docs/Assets/HeadSHot\ \(6\).jpg);
+    background: url(Docs/assets/HeadSHot\ \(6\).jpg);
     background-size: cover;
     background-position: center;
 }
